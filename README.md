@@ -1,21 +1,36 @@
 # Anagram Atlas
 
-A rebuilt version of the original project. The app now lives at the repository root, uses a cleaner layout, and checks whole phrases instead of only raw strings.
+> A polished, browser-based anagram checker for words and phrases.
 
-## What changed
+Anagram Atlas takes a simple idea and turns it into a clean little product: paste in two phrases, normalize away spacing and punctuation, and instantly see whether the letter signatures match. It is intentionally lightweight, but the presentation now feels like a real project instead of a throwaway demo.
 
-- Flattened the project so the app opens from the repo root with [index.html](index.html).
-- Replaced the old playful-but-cluttered UI with a focused, responsive interface.
-- Upgraded the checker to normalize case, spaces, punctuation, and accents before comparing.
-- Removed inline event handling in favor of a small, testable script.
+## Why this project exists
 
-## File layout
+- Useful for word games, puzzle tools, classroom demos, and quick string checks.
+- Built to be simple enough to open directly, but polished enough to show publicly.
+- Designed with a distinct visual system so it feels intentional, not template-driven.
 
-- [index.html](index.html)
-- [assets/css/style.css](assets/css/style.css)
-- [assets/js/app.js](assets/js/app.js)
+## What it does
 
-## Directory structure
+- Checks whole phrases, not just single words.
+- Ignores case, spaces, punctuation, and accent marks during comparison.
+- Uses a small, testable JavaScript core instead of inline handlers.
+- Presents the result through a responsive UI with clear feedback states.
+
+## Highlights
+
+- 🎯 Fast normalization and comparison.
+- 🎨 Editorial-style interface with sharper color, contrast, and spacing.
+- 🧩 Contact cards with icon badges for a more finished feel.
+- 📱 Responsive layout that works from desktop to mobile.
+
+## Tech stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+## Project structure
 
 ```text
 .
@@ -28,9 +43,9 @@ A rebuilt version of the original project. The app now lives at the repository r
 └── README.md
 ```
 
-## How to run
+## Run it locally
 
-Open [index.html](index.html) directly in a browser, or use your editor's live preview if available.
+Open [index.html](index.html) directly in a browser, or use live preview in your editor.
 
 ## Example pairs
 
@@ -39,6 +54,14 @@ Open [index.html](index.html) directly in a browser, or use your editor's live p
 - Astronomer / Moon starer
 - School master / The classroom
 
+## Contact
+
+- Email: [nandini.solutions.software@gmail.com](mailto:nandini.solutions.software@gmail.com)
+- LinkedIn: [goyaljiiiiii](https://www.linkedin.com/in/goyaljiiiiii)
+- YouTube: [@self_taught_bob](https://www.youtube.com/@self_taught_bob)
+- Instagram: [@self_taugh_bob](https://instagram.com/self_taugh_bob)
+- Code repo: [github.com/goyaljiiiiii/Anagram-checker-webapp](https://github.com/goyaljiiiiii/Anagram-checker-webapp)
+
 ## Notes
 
-The old nested implementation is no longer the entry point. The root-level files are now the canonical version of the project.
+The root-level files are the canonical app entrypoint. The old nested implementation is no longer used.
