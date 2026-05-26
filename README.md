@@ -60,7 +60,7 @@ Open [index.html](index.html) directly in a browser, or use live preview in your
 - LinkedIn: [goyaljiiiiii](https://www.linkedin.com/in/goyaljiiiiii)
 - YouTube: [@self_taught_bob](https://www.youtube.com/@self_taught_bob)
 - Instagram: [@self_taugh_bob](https://instagram.com/self_taugh_bob)
-- Code repo: [github.com/goyaljiiiiii/Anagram-checker-webapp](https://github.com/goyaljiiiiii/Anagram-checker-webapp)
+- Code repo: [github.com/goyaljiiiiii/Anagram-checker](https://github.com/goyaljiiiiii/Anagram-checker)
 
 ## Notes
 
