@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A polished anagram checker that compares words and phrases after normalization.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Anagram Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#top" aria-label="Anagram Atlas home">
+                <span class="brand-mark">AA</span>
+                <span>
+                    <strong>Anagram Atlas</strong>
+                    <small>Clean anagram checking for words and phrases</small>
+                </span>
+            </a>
+            <nav class="topnav" aria-label="Primary">
+                <a href="#checker">Checker</a>
+                <a href="#guide">Guide</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero" id="checker">
+                <div class="hero-copy">
+                    <p class="eyebrow">Fast, accurate, lowercase-safe</p>
+                    <h1>Check whether two phrases use the same letters.</h1>
+                    <p class="lede">Paste any two words or phrases, and the app ignores spaces, punctuation, and letter case before comparing them.</p>
+
+                    <form class="checker-card" id="anagram-form" autocomplete="off">
+                        <label>
+                            First phrase
+                            <input id="word1" name="word1" type="text" placeholder="Debit card" spellcheck="false">
+                        </label>
+                        <label>
+                            Second phrase
+                            <input id="word2" name="word2" type="text" placeholder="Bad credit" spellcheck="false">
+                        </label>
+                        <div class="actions">
+                            <button type="submit">Check anagram</button>
+                            <button type="button" class="ghost-button" id="swap-button">Swap inputs</button>
+                        </div>
+                        <p id="result" class="result" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <aside class="hero-panel" aria-label="Highlights">
+                    <div class="stat-card">
+                        <span>Normalization</span>
+                        <strong>Spaces and punctuation removed</strong>
+                    </div>
+                    <div class="stat-card">
+                        <span>Matching</span>
+                        <strong>Sorted letter comparison</strong>
+                    </div>
+                    <div class="stat-card accent">
+                        <span>Examples</span>
+                        <strong>Listen ↔ Silent</strong>
+                        <strong>Conversation ↔ Voices rant on</strong>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="content-grid" id="guide">
+                <article class="panel">
+                    <h2>How it works</h2>
+                    <ol>
+                        <li>Type two phrases into the checker.</li>
+                        <li>The app strips non-letter characters and lowercases both inputs.</li>
+                        <li>It sorts the remaining characters and compares the results.</li>
+                        <li>If the signatures match, the phrases are anagrams.</li>
+                    </ol>
+                </article>
+
+                <article class="panel">
+                    <h2>Examples</h2>
+                    <ul class="examples">
+                        <li><span>Listen</span> <strong>Silent</strong></li>
+                        <li><span>Debit card</span> <strong>Bad credit</strong></li>
+                        <li><span>Astronomer</span> <strong>Moon starer</strong></li>
+                        <li><span>School master</span> <strong>The classroom</strong></li>
+                    </ul>
+                </article>
+
+                <article class="panel" id="contact">
+                    <h2>Contact</h2>
+                    <p>If you want to extend this into a puzzle tool, a phrase matcher, or a word-game utility, start here.</p>
+                    <ul class="contact-list">
+                        <li><a href="mailto:nandunandinigoyal@gmail.com">nandunandinigoyal@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/goyaljiiiiii" target="_blank" rel="noreferrer">LinkedIn: goyaljiiiiii</a></li>
+                        <li><a href="https://www.youtube.com/@self_taught_bob" target="_blank" rel="noreferrer">YouTube: @self_taught_bob</a></li>
+                        <li><a href="https://instagram.com/self_taugh_bob" target="_blank" rel="noreferrer">Instagram: @self_taugh_bob</a></li>
+                        <li><a href="https://github.com/goyaljiiiiii/Anagram-checker-webapp" target="_blank" rel="noreferrer">Code repo: github.com/goyaljiiiiii/Anagram-checker-webapp</a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

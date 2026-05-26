@@ -1,29 +1,44 @@
-🧩 Jumble Genie - The Ultimate Anagram Checker
-Ever stared at a word and thought, "Wait, does this spell something else?" Well, wonder no more! Jumble Genie is here to magically reveal if two words are anagrams of each other. 🪄✨
+# Anagram Atlas
 
-🚀 Features
-🔹 Instant Anagram Detection – Just type, click, and voilà!
-🔹 Sleek & Minimal UI – Because beauty matters, even in word puzzles.
-🔹 100% Accuracy – Okay, fine… unless you enter gibberish.
-🔹 Totally Free & Open-Source – No paywalls, no nonsense, just anagram wizardry.
+A rebuilt version of the original project. The app now lives at the repository root, uses a cleaner layout, and checks whole phrases instead of only raw strings.
 
-🛠️ How It Works
-1️⃣ Enter two words into the input fields.
-2️⃣ Click the Check button (Yes, that’s all you have to do).
-3️⃣ Behind the scenes, we sort and compare the letters.
-4️⃣ If the words contain the same letters in a different order – 🎉 Congrats! You found an anagram!
+## What changed
 
-Example: listen 🔄 silent ✅ | hello 🔄 world ❌
+- Flattened the project so the app opens from the repo root with [index.html](index.html).
+- Replaced the old playful-but-cluttered UI with a focused, responsive interface.
+- Upgraded the checker to normalize case, spaces, punctuation, and accents before comparing.
+- Removed inline event handling in favor of a small, testable script.
 
-🎨 Built With
-HTML5 – Because structure is key.
-CSS3 – Making things look pretty.
-JavaScript – The real brain behind the magic.
-💡 Why Use Jumble Genie?
-You're a word nerd 🧐
-You're solving anagrams for a puzzle or game 🎮
-You're curious if your name can be rearranged into something cool (Spoiler: probably not)
-📬 Contact
-📧 Email: [nandunandinigoyal@gmail.com]
+## File layout
 
-⭐ Found this useful? Give it a star! Because stars make everything shine. ⭐
+- [index.html](index.html)
+- [assets/css/style.css](assets/css/style.css)
+- [assets/js/app.js](assets/js/app.js)
+
+## Directory structure
+
+```text
+.
+├── index.html
+├── assets
+│   ├── css
+│   │   └── style.css
+│   └── js
+│       └── app.js
+└── README.md
+```
+
+## How to run
+
+Open [index.html](index.html) directly in a browser, or use your editor's live preview if available.
+
+## Example pairs
+
+- Listen / Silent
+- Debit card / Bad credit
+- Astronomer / Moon starer
+- School master / The classroom
+
+## Notes
+
+The old nested implementation is no longer the entry point. The root-level files are now the canonical version of the project.
