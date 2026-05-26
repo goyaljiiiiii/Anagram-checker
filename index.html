@@ -18,52 +18,76 @@
                 <span class="brand-mark">AA</span>
                 <span>
                     <strong>Anagram Atlas</strong>
-                    <small>Clean anagram checking for words and phrases</small>
+                    <small>Word duel, remix challenge, instant verdict</small>
                 </span>
             </a>
             <nav class="topnav" aria-label="Primary">
-                <a href="#checker">Checker</a>
-                <a href="#guide">Guide</a>
-                <a href="#contact">Contact</a>
+                <a href="#checker">Play</a>
+                <a href="#guide">Rules</a>
+                <a href="#contact">Links</a>
             </nav>
         </header>
 
         <main id="top">
             <section class="hero" id="checker">
                 <div class="hero-copy">
+                    <div class="hero-kicker">
+                        <span class="kicker-pill">Arcade mode</span>
+                        <span class="kicker-pill kicker-pill-soft">2-player remix duel</span>
+                    </div>
                     <p class="eyebrow">Fast, accurate, lowercase-safe</p>
-                    <h1>Check whether two phrases use the same letters.</h1>
-                    <p class="lede">Paste any two words or phrases, and the app ignores spaces, punctuation, and letter case before comparing them.</p>
+                    <h1>Drop two phrases in and see if they match the same letter spell.</h1>
+                    <p class="lede">This is a tiny word game: clean inputs, scramble the letters, and the app decides whether the two phrases are the same in disguise.</p>
+
+                    <div class="hero-stats" aria-label="Session stats">
+                        <div class="hero-stat">
+                            <span>Mode</span>
+                            <strong>Solo puzzle</strong>
+                        </div>
+                        <div class="hero-stat">
+                            <span>Speed</span>
+                            <strong>Instant</strong>
+                        </div>
+                        <div class="hero-stat">
+                            <span>Rule</span>
+                            <strong>No spaces, no punctuation</strong>
+                        </div>
+                    </div>
 
                     <form class="checker-card" id="anagram-form" autocomplete="off">
+                        <div class="card-titlebar">
+                            <span class="pulse-dot"></span>
+                            <span>Challenge board</span>
+                        </div>
                         <label>
-                            First phrase
+                            Player one phrase
                             <input id="word1" name="word1" type="text" placeholder="Debit card" spellcheck="false">
                         </label>
                         <label>
-                            Second phrase
+                            Player two phrase
                             <input id="word2" name="word2" type="text" placeholder="Bad credit" spellcheck="false">
                         </label>
                         <div class="actions">
-                            <button type="submit">Check anagram</button>
-                            <button type="button" class="ghost-button" id="swap-button">Swap inputs</button>
+                            <button type="submit">Run duel</button>
+                            <button type="button" class="ghost-button" id="swap-button">Flip cards</button>
                         </div>
                         <p id="result" class="result" aria-live="polite"></p>
                     </form>
                 </div>
 
                 <aside class="hero-panel" aria-label="Highlights">
-                    <div class="stat-card stat-card-primary">
-                        <span>Letter signature</span>
-                        <strong>Same characters, same count</strong>
-                        <p>Everything is normalized before the comparison happens.</p>
+                    <div class="stat-card stat-card-primary feature-card">
+                        <span>Current mission</span>
+                        <strong>Match the hidden letter signature</strong>
+                        <p>Same letters, same count, same outcome. Case and punctuation get stripped before the showdown.</p>
                     </div>
-                    <div class="stat-card stat-card-ribbon">
-                        <span>Try it</span>
+                    <div class="stat-card stat-card-ribbon feature-card">
+                        <span>Combo starter</span>
                         <strong>Debit card / Bad credit</strong>
+                        <p>Use this as your first test round.</p>
                     </div>
-                    <div class="stat-card accent stat-card-example">
-                        <span>Playful examples</span>
+                    <div class="stat-card accent stat-card-example feature-card">
+                        <span>Bonus rounds</span>
                         <strong>Listen ↔ Silent</strong>
                         <strong>School master ↔ The classroom</strong>
                     </div>
@@ -72,17 +96,17 @@
 
             <section class="content-grid" id="guide">
                 <article class="panel">
-                    <h2>How it works</h2>
+                    <h2>How to play</h2>
                     <ol>
-                        <li>Type two phrases into the checker.</li>
-                        <li>The app strips non-letter characters and lowercases both inputs.</li>
-                        <li>It sorts the remaining characters and compares the results.</li>
-                        <li>If the signatures match, the phrases are anagrams.</li>
+                        <li>Enter two phrases into the challenge board.</li>
+                        <li>The app strips spaces, punctuation, and case differences.</li>
+                        <li>It sorts the remaining characters into a signature.</li>
+                        <li>If both signatures match, you win the round.</li>
                     </ol>
                 </article>
 
                 <article class="panel">
-                    <h2>Examples</h2>
+                    <h2>Sample rounds</h2>
                     <ul class="examples">
                         <li><span>Listen</span> <strong>Silent</strong></li>
                         <li><span>Debit card</span> <strong>Bad credit</strong></li>
@@ -92,41 +116,41 @@
                 </article>
 
                 <article class="panel" id="contact">
-                    <h2>Contact</h2>
-                    <p>If you want to extend this into a puzzle tool, a phrase matcher, or a word-game utility, start here.</p>
+                    <h2>Links</h2>
+                    <p>Connect, follow, or jump into the codebase from here.</p>
                     <div class="contact-grid">
                         <a class="contact-card" href="mailto:nandini.solutions.software@gmail.com">
                             <span class="contact-icon contact-icon-mail" aria-hidden="true">@</span>
                             <span>
-                                <strong>Email</strong>
+                                <strong>Email me</strong>
                                 <small>nandini.solutions.software@gmail.com</small>
                             </span>
                         </a>
                         <a class="contact-card" href="https://www.linkedin.com/in/goyaljiiiiii" target="_blank" rel="noreferrer">
                             <span class="contact-icon contact-icon-linkedin" aria-hidden="true">in</span>
                             <span>
-                                <strong>LinkedIn</strong>
+                                <strong>LinkedIn profile</strong>
                                 <small>goyaljiiiiii</small>
                             </span>
                         </a>
                         <a class="contact-card" href="https://www.youtube.com/@self_taught_bob" target="_blank" rel="noreferrer">
                             <span class="contact-icon contact-icon-youtube" aria-hidden="true">▶</span>
                             <span>
-                                <strong>YouTube</strong>
+                                <strong>YouTube channel</strong>
                                 <small>@self_taught_bob</small>
                             </span>
                         </a>
                         <a class="contact-card" href="https://instagram.com/self_taugh_bob" target="_blank" rel="noreferrer">
                             <span class="contact-icon contact-icon-instagram" aria-hidden="true">◎</span>
                             <span>
-                                <strong>Instagram</strong>
+                                <strong>Instagram handle</strong>
                                 <small>@self_taugh_bob</small>
                             </span>
                         </a>
                         <a class="contact-card contact-card-wide" href="https://github.com/goyaljiiiiii/Anagram-checker-webapp" target="_blank" rel="noreferrer">
                             <span class="contact-icon contact-icon-github" aria-hidden="true">&lt;/&gt;</span>
                             <span>
-                                <strong>Code repo</strong>
+                                <strong>Code repository</strong>
                                 <small>github.com/goyaljiiiiii/Anagram-checker-webapp</small>
                             </span>
                         </a>
