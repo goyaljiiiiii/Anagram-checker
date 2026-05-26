@@ -1,22 +1,22 @@
 :root {
-    color-scheme: dark;
-    --bg: #07111f;
-    --bg-soft: rgba(15, 23, 42, 0.72);
-    --panel: rgba(8, 15, 31, 0.88);
-    --panel-strong: rgba(10, 18, 39, 0.95);
-    --panel-border: rgba(148, 163, 184, 0.18);
-    --panel-border-strong: rgba(96, 165, 250, 0.28);
-    --text: #e5eefb;
-    --muted: #9badc9;
+    color-scheme: light;
+    --bg: #f6efe4;
+    --bg-soft: rgba(255, 255, 255, 0.66);
+    --panel: rgba(255, 251, 244, 0.9);
+    --panel-strong: rgba(255, 255, 255, 0.98);
+    --panel-border: rgba(37, 31, 23, 0.08);
+    --panel-border-strong: rgba(121, 82, 37, 0.16);
+    --text: #1f1a17;
+    --muted: #695d55;
     --accent: #7c3aed;
-    --accent-strong: #22c55e;
-    --accent-cyan: #22d3ee;
-    --warm: #fbbf24;
-    --error: #fb7185;
-    --shadow: 0 24px 56px rgba(1, 6, 23, 0.44);
-    --radius-xl: 28px;
-    --radius-lg: 20px;
-    --radius-md: 14px;
+    --accent-strong: #e4572e;
+    --accent-cyan: #0081a7;
+    --warm: #f4a261;
+    --error: #d1495b;
+    --shadow: 0 24px 48px rgba(65, 42, 22, 0.12);
+    --radius-xl: 30px;
+    --radius-lg: 22px;
+    --radius-md: 16px;
 }
 
 * {
@@ -30,13 +30,13 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Space Grotesk", system-ui, sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at 14% 16%, rgba(124, 58, 237, 0.24), transparent 24%),
-        radial-gradient(circle at 80% 12%, rgba(34, 211, 238, 0.18), transparent 22%),
-        radial-gradient(circle at 84% 86%, rgba(251, 191, 36, 0.18), transparent 24%),
-        linear-gradient(145deg, #020617 0%, #09101f 48%, #111a33 100%);
+        radial-gradient(circle at 12% 18%, rgba(244, 162, 97, 0.28), transparent 20%),
+        radial-gradient(circle at 88% 14%, rgba(124, 58, 237, 0.18), transparent 18%),
+        radial-gradient(circle at 82% 82%, rgba(0, 129, 167, 0.15), transparent 20%),
+        linear-gradient(150deg, #f8f2e9 0%, #f6efe4 48%, #f3eadf 100%);
 }
 
 body::before {
@@ -45,10 +45,10 @@ body::before {
     inset: 0;
     pointer-events: none;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 58px 58px;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 90%);
+        linear-gradient(rgba(31, 26, 23, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 26, 23, 0.05) 1px, transparent 1px);
+    background-size: 66px 66px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), transparent 92%);
 }
 
 a {
@@ -64,7 +64,7 @@ input {
 .page-shell {
     width: min(1180px, calc(100% - 32px));
     margin: 0 auto;
-    padding: 20px 0 56px;
+    padding: 18px 0 56px;
     position: relative;
 }
 
@@ -84,7 +84,7 @@ input {
     height: 160px;
     right: 2%;
     top: 12%;
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.28), transparent 68%);
+    background: radial-gradient(circle, rgba(228, 87, 46, 0.2), transparent 68%);
 }
 
 .page-shell::after {
@@ -92,24 +92,24 @@ input {
     height: 220px;
     left: -30px;
     bottom: -20px;
-    background: radial-gradient(circle, rgba(34, 211, 238, 0.18), transparent 70%);
+    background: radial-gradient(circle, rgba(0, 129, 167, 0.18), transparent 70%);
 }
 
 .topbar {
     position: sticky;
-    top: 16px;
+    top: 14px;
     z-index: 20;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 18px;
-    padding: 16px 20px;
-    margin-bottom: 28px;
-    border: 1px solid var(--panel-border-strong);
-    border-radius: 24px;
-    background: linear-gradient(180deg, rgba(16, 24, 46, 0.98), rgba(2, 6, 23, 0.76));
-    backdrop-filter: blur(18px);
-    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.5);
+    padding: 12px 16px;
+    margin-bottom: 26px;
+    border: 1px solid rgba(31, 26, 23, 0.08);
+    border-radius: 999px;
+    background: rgba(255, 251, 244, 0.78);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 14px 30px rgba(65, 42, 22, 0.08);
 }
 
 .brand {
@@ -126,11 +126,11 @@ input {
 
 .brand strong {
     font-size: 1rem;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
 }
 
 .brand small {
-    color: var(--muted);
+    color: #7c6d60;
     font-size: 0.84rem;
 }
 
@@ -140,18 +140,18 @@ input {
     width: 44px;
     height: 44px;
     border-radius: 14px;
-    color: #eff6ff;
-    background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+    color: #fff8f2;
+    background: linear-gradient(135deg, #7c3aed, #e4572e);
     font-weight: 800;
     letter-spacing: 0.08em;
-    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.12);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
 }
 
 .topnav {
     display: flex;
     align-items: center;
     gap: 18px;
-    color: #c8d5ea;
+    color: #5f534a;
     font-weight: 600;
 }
 
@@ -159,15 +159,15 @@ input {
 .topnav a:focus-visible,
 .brand:hover,
 .brand:focus-visible {
-    color: #ffffff;
+    color: var(--text);
 }
 
 .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-    gap: 28px;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 26px;
     align-items: start;
-    padding: 28px 0 34px;
+    padding: 20px 0 30px;
 }
 
 .hero-kicker {
@@ -183,30 +183,31 @@ input {
     gap: 8px;
     padding: 9px 14px;
     border-radius: 999px;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(34, 211, 238, 0.14));
-    color: #eef5ff;
-    border: 1px solid rgba(148, 163, 184, 0.18);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.14), rgba(228, 87, 46, 0.14));
+    color: #362a24;
+    border: 1px solid rgba(121, 82, 37, 0.14);
     font-size: 0.84rem;
     font-weight: 700;
     letter-spacing: 0.02em;
 }
 
 .kicker-pill-soft {
-    background: rgba(255, 255, 255, 0.04);
-    color: #c7d7ec;
+    background: rgba(255, 255, 255, 0.46);
+    color: #6b5e55;
 }
 
 .hero-copy h1 {
     margin: 10px 0 14px;
-    font-size: clamp(3rem, 5.2vw, 6rem);
-    line-height: 0.9;
-    letter-spacing: -0.08em;
-    max-width: 11ch;
+    font-family: "Fraunces", serif;
+    font-size: clamp(3.2rem, 5.6vw, 6.3rem);
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    max-width: 10ch;
 }
 
 .eyebrow {
     margin: 0;
-    color: #a78bfa;
+    color: var(--accent-strong);
     text-transform: uppercase;
     letter-spacing: 0.18em;
     font-size: 0.78rem;
@@ -214,8 +215,8 @@ input {
 }
 
 .lede {
-    max-width: 58ch;
-    margin: 0 0 20px;
+    max-width: 56ch;
+    margin: 0 0 18px;
     color: var(--muted);
     font-size: 1.08rem;
     line-height: 1.7;
@@ -231,13 +232,13 @@ input {
 .hero-stat {
     padding: 14px 16px;
     border-radius: 18px;
-    border: 1px solid rgba(148, 163, 184, 0.14);
-    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(121, 82, 37, 0.12);
+    background: rgba(255, 255, 255, 0.62);
 }
 
 .hero-stat span {
     display: block;
-    color: #a5b4cc;
+    color: #7d6f64;
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size: 0.7rem;
@@ -247,7 +248,7 @@ input {
 
 .hero-stat strong {
     display: block;
-    color: #f8fbff;
+    color: #221d19;
     font-size: 0.95rem;
     line-height: 1.35;
 }
@@ -256,16 +257,16 @@ input {
 .panel,
 .hero-panel .stat-card {
     border: 1px solid var(--panel-border);
-    background: linear-gradient(180deg, rgba(16, 24, 46, 0.98), rgba(8, 15, 31, 0.94));
+    background: linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 249, 240, 0.92));
     box-shadow: var(--shadow);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(10px);
 }
 
 .checker-card {
     display: grid;
     gap: 16px;
     padding: 22px;
-    border-radius: var(--radius-xl);
+    border-radius: 34px;
     position: relative;
     overflow: hidden;
 }
@@ -277,7 +278,7 @@ input {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.26), transparent 68%);
+    background: radial-gradient(circle, rgba(228, 87, 46, 0.18), transparent 68%);
     pointer-events: none;
 }
 
@@ -285,7 +286,7 @@ input {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: #dbe7f7;
+    color: #5d5149;
     text-transform: uppercase;
     letter-spacing: 0.16em;
     font-size: 0.72rem;
@@ -296,37 +297,37 @@ input {
     width: 10px;
     height: 10px;
     border-radius: 999px;
-    background: #22d3ee;
-    box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.45);
+    background: #e4572e;
+    box-shadow: 0 0 0 0 rgba(228, 87, 46, 0.42);
     animation: pulse 1.7s ease-in-out infinite;
 }
 
 .checker-card label {
     display: grid;
     gap: 10px;
-    color: #c7d7ec;
+    color: #5b5047;
     font-size: 0.92rem;
     font-weight: 600;
 }
 
 .checker-card input {
     width: 100%;
-    border: 1px solid rgba(148, 163, 184, 0.22);
+    border: 1px solid rgba(121, 82, 37, 0.14);
     border-radius: 16px;
     padding: 16px 18px;
     color: var(--text);
-    background: rgba(7, 13, 26, 0.92);
+    background: #fffaf4;
     transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .checker-card input::placeholder {
-    color: #64748b;
+    color: #99887c;
 }
 
 .checker-card input:focus {
     outline: none;
-    border-color: rgba(34, 211, 238, 0.7);
-    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.14);
+    border-color: rgba(228, 87, 46, 0.5);
+    box-shadow: 0 0 0 4px rgba(228, 87, 46, 0.12);
     transform: translateY(-1px);
 }
 
@@ -351,20 +352,20 @@ button:focus-visible {
 }
 
 button[type="submit"] {
-    color: #eff6ff;
-    background: linear-gradient(135deg, #8b5cf6, #22d3ee);
-    box-shadow: 0 18px 30px rgba(34, 211, 238, 0.18);
+    color: #fffaf4;
+    background: linear-gradient(135deg, #e4572e, #7c3aed);
+    box-shadow: 0 18px 30px rgba(228, 87, 46, 0.18);
 }
 
 button[type="submit"]:hover,
 button[type="submit"]:focus-visible {
-    box-shadow: 0 22px 34px rgba(139, 92, 246, 0.24);
+    box-shadow: 0 22px 34px rgba(124, 58, 237, 0.18);
 }
 
 .ghost-button {
     color: var(--text);
-    background: rgba(148, 163, 184, 0.1);
-    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(121, 82, 37, 0.14);
 }
 
 .result {
@@ -392,13 +393,13 @@ button[type="submit"]:focus-visible {
     display: grid;
     gap: 8px;
     padding: 20px;
-    border-radius: var(--radius-lg);
+    border-radius: 26px;
     position: relative;
     overflow: hidden;
 }
 
 .stat-card span {
-    color: #c7d7ec;
+    color: #7d6f64;
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size: 0.72rem;
@@ -436,19 +437,19 @@ button[type="submit"]:focus-visible {
 }
 
 .stat-card-primary::after {
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.24), transparent 70%);
+    background: radial-gradient(circle, rgba(228, 87, 46, 0.16), transparent 70%);
 }
 
 .stat-card-ribbon::after {
-    background: radial-gradient(circle, rgba(251, 191, 36, 0.22), transparent 68%);
+    background: radial-gradient(circle, rgba(244, 162, 97, 0.22), transparent 68%);
 }
 
 .stat-card-example {
-    background: linear-gradient(180deg, rgba(124, 58, 237, 0.18), rgba(8, 15, 31, 0.96));
+    background: linear-gradient(180deg, rgba(228, 87, 46, 0.12), rgba(255, 249, 240, 0.96));
 }
 
 .stat-card-example::after {
-    background: radial-gradient(circle, rgba(34, 211, 238, 0.2), transparent 70%);
+    background: radial-gradient(circle, rgba(0, 129, 167, 0.18), transparent 70%);
 }
 
 .content-grid {
@@ -459,7 +460,7 @@ button[type="submit"]:focus-visible {
 }
 
 .panel {
-    border-radius: var(--radius-xl);
+    border-radius: 30px;
     padding: 24px;
     position: relative;
     overflow: hidden;
@@ -476,6 +477,7 @@ button[type="submit"]:focus-visible {
 .panel h2 {
     margin: 0 0 14px;
     font-size: 1.25rem;
+    font-family: "Fraunces", serif;
 }
 
 .panel h2::after {
@@ -485,7 +487,7 @@ button[type="submit"]:focus-visible {
     height: 4px;
     margin-top: 10px;
     border-radius: 999px;
-    background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+    background: linear-gradient(90deg, #e4572e, #7c3aed);
 }
 
 .panel p,
@@ -514,8 +516,8 @@ button[type="submit"]:focus-visible {
     gap: 14px;
     padding: 14px 16px;
     border-radius: 18px;
-    border: 1px solid rgba(148, 163, 184, 0.12);
-    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(121, 82, 37, 0.12);
+    background: rgba(255, 255, 255, 0.5);
     transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
@@ -533,7 +535,7 @@ button[type="submit"]:focus-visible {
 }
 
 .examples span {
-    color: var(--muted);
+    color: #6d6259;
 }
 
 .contact-grid {
@@ -550,7 +552,7 @@ button[type="submit"]:focus-visible {
 
 .contact-card strong {
     font-size: 0.98rem;
-    color: #f8fbff;
+    color: #241e1a;
 }
 
 .contact-card small {
@@ -561,8 +563,8 @@ button[type="submit"]:focus-visible {
 .contact-card:hover,
 .contact-card:focus-visible {
     transform: translateY(-2px);
-    border-color: rgba(34, 211, 238, 0.36);
-    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(228, 87, 46, 0.26);
+    background: rgba(255, 255, 255, 0.72);
 }
 
 .contact-card-wide {
@@ -575,30 +577,30 @@ button[type="submit"]:focus-visible {
     width: 42px;
     height: 42px;
     border-radius: 14px;
-    color: #eff6ff;
+    color: #fffaf4;
     font-weight: 800;
     letter-spacing: 0.04em;
     flex: 0 0 auto;
 }
 
 .contact-icon-mail {
-    background: linear-gradient(135deg, #8b5cf6, #c084fc);
+    background: linear-gradient(135deg, #e4572e, #f4a261);
 }
 
 .contact-icon-linkedin {
-    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
 }
 
 .contact-icon-youtube {
-    background: linear-gradient(135deg, #ef4444, #f97316);
+    background: linear-gradient(135deg, #d1495b, #e4572e);
 }
 
 .contact-icon-instagram {
-    background: linear-gradient(135deg, #f43f5e, #8b5cf6);
+    background: linear-gradient(135deg, #0081a7, #7c3aed);
 }
 
 .contact-icon-github {
-    background: linear-gradient(135deg, #0f172a, #334155);
+    background: linear-gradient(135deg, #1f1a17, #5f534a);
 }
 
 @keyframes pulse {
