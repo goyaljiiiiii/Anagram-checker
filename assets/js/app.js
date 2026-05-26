@@ -4,6 +4,28 @@ const secondInput = document.getElementById("word2");
 const result = document.getElementById("result");
 const swapButton = document.getElementById("swap-button");
 
+function initSpeedInsights() {
+    if (typeof window === "undefined" || typeof document === "undefined") {
+        return;
+    }
+
+    const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+
+    if (window.location.protocol === "file:" || isLocalHost) {
+        return;
+    }
+
+    if (document.head.querySelector('script[src="/_vercel/speed-insights/script.js"]')) {
+        return;
+    }
+
+    const script = document.createElement("script");
+    script.src = "/_vercel/speed-insights/script.js";
+    script.defer = true;
+    script.dataset.route = window.location.pathname;
+    document.head.appendChild(script);
+}
+
 function normalizePhrase(value) {
     return value
         .toLowerCase()
@@ -68,3 +90,4 @@ secondInput.addEventListener("input", () => {
 });
 
 renderResult(false, "", "");
+initSpeedInsights();
